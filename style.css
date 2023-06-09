@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.illustration {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(images/eid-wallpaper-2.jpg) no-repeat top center fixed;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.i-large, .i-medium, .i-small {
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+}
+.i-large {
+    background: url(images/large-particular.png) repeat 0px 0px;
+    width: 100%;
+    animation: dropFlowParticles 2s linear infinite;
+}
+
+.i-medium {
+    background: url(images/medium-particular.png) repeat 0px 0px;
+    animation: dropFlowParticles 12s linear infinite;
+}
+
+.i-small {
+    background: url(images/small-particular.png) repeat 0px 0px;
+    animation: dropFlowParticles 27s linear infinite;
+}
+
+@keyframes dropFlowParticles {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 813px;
+    }
+}
+
+
+
+/* @media only screen and (max-width: 950px) {
+    .illustration {
+        width: 900px;
+        height: 100vh;
+        background: url(images/eid-wallpaper-2.jpg) no-repeat center center fixed;
+        background-size: cover;
+       background-position: center;
+    }
+  } */
